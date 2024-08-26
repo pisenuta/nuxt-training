@@ -1,0 +1,47 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  tab-size: 4;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  line-height: inherit;
+  margin: 0;
+  /* color: rgba(var(--v-theme-text));
+  background-color: rgba(var(--v-theme-background)); */
+}
+
+h1,
+h2,
+p,
+pre {
+  margin: 0;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 24px;
+}
+.v-data-table-header__content {
+  font-weight: 700;
+}
+.v-data-table-header {
+  background-color: red !important;
+}
