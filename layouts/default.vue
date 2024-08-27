@@ -39,6 +39,8 @@
 
     <v-main>
       <v-container>
+        <NuxtLoadingIndicator height="5" />
+
         <slot />
       </v-container>
     </v-main>

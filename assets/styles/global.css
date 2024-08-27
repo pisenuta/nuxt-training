@@ -3,13 +3,12 @@ html {
   line-height: 1.5;
   tab-size: 4;
   scroll-behavior: smooth;
+  background-color: #f3f4f6;
 }
 body {
   font-family: 'IBM Plex Sans Thai', sans-serif;
   line-height: inherit;
   margin: 0;
-  /* color: rgba(var(--v-theme-text));
-  background-color: rgba(var(--v-theme-background)); */
 }
 
 h1,
@@ -38,10 +37,4 @@ h3 {
 }
 h4 {
   font-size: 24px;
-}
-.v-data-table-header__content {
-  font-weight: 700;
-}
-.v-data-table-header {
-  background-color: red !important;
 }
