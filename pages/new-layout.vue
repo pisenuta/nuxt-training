@@ -9,5 +9,3 @@ definePageMeta({
   layout: 'new-layout',
 })
 </script>
-
-<style scoped></style>

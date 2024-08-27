@@ -17,7 +17,3 @@
 <script setup lang="ts">
 const { data } = await useFetch('https://dummyjson.com/products')
 </script>
-
-<style scoped>
-/* Additional custom styles if needed */
-</style>

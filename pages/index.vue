@@ -18,9 +18,3 @@
     />
   </div>
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped>
-/* Additional custom styles if needed */
-</style>

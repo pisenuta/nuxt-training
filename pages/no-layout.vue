@@ -9,5 +9,3 @@ definePageMeta({
   layout: false,
 })
 </script>
-
-<style scoped></style>

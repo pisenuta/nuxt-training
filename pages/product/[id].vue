@@ -61,9 +61,4 @@
 <script setup lang="ts">
 const { id } = useRoute().params
 const { data: data } = await useFetch('https://dummyjson.com/products/' + id)
-console.log('🍪🥛 ~ data:', data.value)
 </script>
-
-<style scoped>
-/* Additional custom styles if needed */
-</style>
