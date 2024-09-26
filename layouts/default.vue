@@ -39,7 +39,7 @@
 
     <v-main>
       <v-container>
-        <NuxtLoadingIndicator height="5" />
+        <NuxtLoadingIndicator :height="5" />
 
         <slot />
       </v-container>
