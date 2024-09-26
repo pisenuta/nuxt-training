@@ -3,7 +3,7 @@
     <div>
       <div>
         <v-img
-          :src="data?.thumbnail"
+          :src="data.thumbnail"
           :width="300"
         >
           <template v-slot:placeholder>
@@ -17,17 +17,17 @@
         </v-img>
       </div>
       <div class="p-6">
-        <h4 class="mb-2">{{ data?.title }}</h4>
-        <p class="text-lg text-gray-600 mb-4">${{ data?.price.toFixed(2) }}</p>
-        <p class="text-gray-600 mb-4">{{ data?.description }}</p>
+        <h4 class="mb-2">{{ data.title }}</h4>
+        <p class="text-lg text-gray-600 mb-4">${{ data.price.toFixed(2) || 0 }}</p>
+        <p class="text-gray-600 mb-4">{{ data.description }}</p>
         <div class="flex items-center mb-4">
           <v-rating
-            v-model="data?.rating"
+            v-model="data.rating"
             readonly
             class="mr-2"
             color="amber"
           ></v-rating>
-          <span class="text-gray-600">{{ data?.rating.toFixed(1) }} / 5</span>
+          <span class="text-gray-600">{{ data.rating.toFixed(1) }} / 5</span>
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@
     <div class="mt-8 p-6">
       <h3 class="mb-4">Reviews</h3>
       <div
-        v-for="review in data?.reviews"
+        v-for="review in data.reviews"
         :key="review.reviewerEmail"
         class="mb-6"
       >
@@ -78,5 +78,5 @@ interface ProductDetail {
   rating: number
 }
 
-const { data } = await useFetch<ProductDetail>('https://dummyjson.com/products')
+const { data } = await useFetch<ProductDetail>('https://dummyjson.com/products/' + id)
 </script>
