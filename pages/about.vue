@@ -10,6 +10,10 @@
       />
       <h3>About Us</h3>
     </div>
+    <div class="mt-4 grid gap-2">
+      <h4>State Management</h4>
+      <p>Current Color : {{ color }}</p>
+    </div>
   </div>
 </template>
 
@@ -22,4 +26,6 @@ definePageMeta({
     'named',
   ],
 })
+
+const color = useColor()
 </script>

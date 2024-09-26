@@ -11,13 +11,25 @@
       <h1 class="text-4xl font-bold text-gray-800 my-5">Welcome to Our Store</h1>
     </div>
     <CommonButton
-      @click="router.push('/product')"
+      @click="navigateTo('/product')"
       label="Shop Now"
       class="text-white"
       style="background: repeating-linear-gradient(to right, #00dc82 0%, #34cdfe 50%, #0047e1 100%)"
     />
+    <div class="mt-4 grid gap-2">
+      <h4>State Management</h4>
+      <p>Current Color : {{ color }}</p>
+      <CommonButton
+        @click="changeColor"
+        label="Change Color"
+      />
+    </div>
   </div>
 </template>
 <script setup lang="ts">
-const router = useRouter()
+const color = useColor()
+
+const changeColor = () => {
+  color.value = color.value === 'Pink' ? 'Red' : 'Pink'
+}
 </script>
