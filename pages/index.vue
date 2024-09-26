@@ -11,10 +11,13 @@
       <h1 class="text-4xl font-bold text-gray-800 my-5">Welcome to Our Store</h1>
     </div>
     <CommonButton
-      @click="navigateTo('/product')"
+      @click="router.push('/product')"
       label="Shop Now"
       class="text-white"
       style="background: repeating-linear-gradient(to right, #00dc82 0%, #34cdfe 50%, #0047e1 100%)"
     />
   </div>
 </template>
+<script setup lang="ts">
+const router = useRouter()
+</script>
